@@ -1,0 +1,65 @@
+<template>
+    <lightning-card title="General Information">
+        <lightning-progress-bar  size="small"></lightning-progress-bar>
+        <p>indicates a required field. Helpful tips are available throughout the system and may be found by clicking on the icon </p>
+
+        <lightning-progress-bar value="100" size="small"></lightning-progress-bar>
+         <p class="ridge">
+        Certain property and liability exposures may not be eligible for coverage.
+        Please review this list of ineligible exposures before processing with a quote.
+            
+                <lightning-button variant="brand" label="Review Ineligible Exposures" title="Review Ineligible Exposures" onclick={handleClick} class="slds-float_right"></lightning-button>
+            </p>
+            If this quote was created by comparative rater,please verify all the questions are answaered correctly.
+            <div class="slds-border_right">
+            <lightning-combobox type="picklist" label="Transaction" options={transactionOptions} ></lightning-combobox>
+            <lightning-combobox type="picklist" label="Agency Code"  options={agencycodeOptions} ></lightning-combobox>
+            <lightning-input type="date" label="Effective date" ></lightning-input>
+            </div>
+            <h1>Named Insured</h1>
+            <lightning-progress-bar  size="small"></lightning-progress-bar>
+            First Named Insured
+            <h1>Mailing Address</h1>
+            <lightning-progress-bar  size="small"></lightning-progress-bar>
+            <h1>Primary Garaging Address</h1>
+            <lightning-progress-bar  size="small"></lightning-progress-bar>
+            <p>The Primary Garaging ZIP code will be used to rate all vehicles.
+                A vehicle can be alternative garaged by changing the Garaging ZIP
+                 Code for the vehicle in vehicle information screen</p>
+                 <lightning-input class="slds-p-left_xx-large" type="checkbox"  label="Same As Mailing Address" ></lightning-input>
+                 <p>(Garaging address must be physical location of vehicle)</p>
+                 <p>Street</p>
+                 <p>City</p>
+                 <p>State</p>
+                 <p>ZIP Code</p>
+                <p>Prior Carrier Infomation</p>
+                 <lightning-progress-bar  size="small"></lightning-progress-bar>
+                 <lightning-input class="slds-p-left_xx-large" type="checkbox"  label="No Prior Carrier" ></lightning-input>
+                <p>Prior Carrier Name:</p> 
+                <p>Report Details</p>
+                <p>Length of Time With Prior  Carrier Years</p>
+                <p>Length of Time With Prior  Carrier Months</p>
+                <p>Policy Expiration Date:</p>
+                <p>Prior Carrier BI Limits:</p>
+                <lightning-button variant="brand" label="Continue to Vehicle Information"></lightning-button>
+                <lightning-button label="Policy Overview"></lightning-button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </lightning-card>
+    
+</template>
